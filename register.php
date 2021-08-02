@@ -9,7 +9,7 @@ if(isset($_POST['register']))
     $query = "INSERT INTO student(StudentID, Name, Board ) VALUES ('$studentid',  '$name', '$board') ";
     mysqli_query($conn, $query);
     if ($board == 1) {
-        header('location: csm.php/'.$studentid);
+        header('location: csm.php');
     }
     else
     {
